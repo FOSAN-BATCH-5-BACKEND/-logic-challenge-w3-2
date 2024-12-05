@@ -3,6 +3,15 @@
 
 let jumlah = function(halte){
     // Good Luck!
+    let masuk = 0
+    let turun = 0
+    for(let i=0; i<halte.length; i++){
+      masuk += halte[i][0]
+      turun += halte[i][1]
+      // return halte[i]
+    }
+    hasil = masuk - turun
+    return hasil
   }
 
 

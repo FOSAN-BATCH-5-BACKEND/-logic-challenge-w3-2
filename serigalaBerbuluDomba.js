@@ -11,7 +11,19 @@ jika serigala tersebut berada di depan anda, (di depan domba no 1) maka anda bis
 */
 
 function serigalaBerbuluDomba(queue) {
-    
+    let nomer = 0
+    for(let i=0; i<queue.length; i++){
+        if(queue[i] == 'serigala'){
+            nomer += i
+        }
+        hasil = queue.length - nomer -1
+    }
+    if (hasil == 0){
+        return 'syuh syuh'
+    }
+    else{
+    return 'oi, domba no ' + hasil +', LARIIII'
+    }
 }
 
 

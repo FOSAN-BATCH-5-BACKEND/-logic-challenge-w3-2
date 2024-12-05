@@ -37,8 +37,29 @@ Output: "Divisi: duskiTeam
 */
 
 function dataKaryawan(parameterData) {
-    // buatlah kodemu disini
-}
+
+
+     for(let i=0; i<parameterData.length; i++){
+       if(Array.isArray(parameterData[i])){
+        console.log('nama : '+parameterData[i][0])
+        console.log('umur : ' +parameterData[i][1])
+        
+          if(parameterData[i][2] == true){
+            console.log('status : menikah')
+          }
+          else{
+            console.log('status : singgle')
+          }
+       }
+       else{
+        console.log('devisi : '+parameterData[i])
+         
+       }
+       if(i == parameterData[i].length){
+        console.log('\n')
+       }
+     }
+   }
 
 let data = [
   "duskiTeam", ["bhagas", 20, true], ["adhit", 19, false], ["puka", 23, false],
